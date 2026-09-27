@@ -6,11 +6,18 @@ learns a policy by interacting with a Gymnasium environment, storing
 transitions in a replay buffer, and repeatedly updating neural networks from
 sampled batches.
 
-The implementation is tested with the following MuJoCo environments:
+The implementation has tested examples with the following MuJoCo environments:
 
 - `InvertedPendulum-v4`
 - `HalfCheetah-v4`
 - `Hopper-v5`
+
+The implementation was also tested in the following environments:
+
+- `Reacher`
+- `InvertedDoublePendulum`
+- `Fetch`
+- `Hand`
 
 The goal is to train an agent that controls each simulated body and maximizes
 the cumulative reward. During evaluation, the saved policy acts
